@@ -1,0 +1,11 @@
+// Absolute center
+
+// Vertically and horizontally center an element within a relatively positioned parent.
+%absolute-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}

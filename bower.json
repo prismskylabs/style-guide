@@ -1,0 +1,13 @@
+{
+  "name": "prism-style-guide",
+  "description": "Prism Skylabs base style guide for all web projects",
+  "version": "0.1.0",
+  "homepage": "http://prism.com",
+  "ignore": [
+    "/.*"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.1",
+    "prismjs": "*"
+  }
+}

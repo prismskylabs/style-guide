@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='//cloud.typography.com/6433892/708244/css/fonts.css')
+    link(rel='stylesheet', href='styles/docs.css')
+    link(rel='stylesheet', href='bower_components/prismjs/prism.css')
+  body.language-markup
+    include ./sections/nav.jade
+    .styleguide-wrap
+      include ./sections/colors.jade
+      include ./sections/typography.jade
+      include ./sections/buttons.jade
+      include ./sections/forms.jade
+      include ./sections/tables.jade
+
+    script(src='bower_components/prismjs/prism.js')
