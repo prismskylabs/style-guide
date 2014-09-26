@@ -1,0 +1,115 @@
+@import "../../sass/prism";
+
+.styleguide-nav {
+  position: fixed;
+  top: 0;
+  left: 900px;
+  width: 250px;
+}
+
+.styleguide-wrap {
+  width: 900px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  margin: 20px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $c-gray-lighter;
+  font-size: 24px;
+}
+
+.sub-section-header {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+// Example block
+.prism-example {
+  position: relative;
+  border: 1px solid $c-gray-light;
+  border-radius: 3px;
+  margin-bottom: 45px;
+  &:after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: $font-size-small;
+    font-weight: 500;
+    color: $c-gray-light;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Example";
+  }
+  .example-content {
+    padding: 55px 15px 30px 15px;
+  }
+  .example-code {
+    padding: 10px 15px;
+    border-top: 1px solid $c-gray-light;
+    background-color: $c-gray-lighter;
+    pre {
+      // Stop syntax highlighting from adding padding/margin
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+  &.headers {
+    h1,h2,h3,h4,h5 { margin: 14px 0; }
+  }
+
+  &.span {
+    span {
+      padding-right: 40px;
+    }
+  }
+}
+
+// Colors
+.colors-section {
+  @include clearfix;
+  .colors-col {
+    width: 25%;
+    float: left;
+  }
+  &.grays .colors-col {
+    width: 20%;
+  }
+  .swatch {
+    height: 100px;
+    color: #fff;
+    padding: 15px;
+
+    &.primary-darker { background-color: $c-primary-darker; }
+    &.primary-dark { background-color: $c-primary-dark; }
+    &.primary { background-color: $c-primary; }
+    &.primary-light { background-color: $c-primary-light; }
+
+    &.success-darker { background-color: $c-success-darker; }
+    &.success-dark { background-color: $c-success-dark; }
+    &.success { background-color: $c-success; }
+    &.success-light { background-color: $c-success-light; }
+
+    &.info-darker { background-color: $c-info-darker; }
+    &.info-dark { background-color: $c-info-dark; }
+    &.info { background-color: $c-info; }
+    &.info-light { background-color: $c-info-light; }
+
+    &.danger-darker { background-color: $c-danger-darker; }
+    &.danger-dark { background-color: $c-danger-dark; }
+    &.danger { background-color: $c-danger; }
+    &.danger-light { background-color: $c-danger-light; }
+
+    &.gray-darker { background-color: $c-gray-darker; }
+    &.gray-dark { background-color: $c-gray-dark; }
+    &.gray { background-color: $c-gray; }
+    &.gray-light { background-color: $c-gray-light; }
+    &.gray-lighter { background-color: $c-gray-lighter; }
+  }
+}
+

@@ -1,0 +1,30 @@
+section.forms-section.main-section
+  h2.section-header#forms Forms
+
+  h3.sub-section-header#forms-base Base styles
+  p Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing. See Bootstrap docs for more guidlines.
+  .prism-example
+    .example-content
+      form
+        .form-group
+          label Email
+          input(type='text',placeholder='john@gmail.com').form-control
+        .form-group
+          label Message
+          textarea(rows=3).form-control
+        button(type='submit').btn.btn-primary Submit
+    .example-code
+      pre
+        code
+          ='<form>\n'
+          ='  <div class="form-group">\n'
+          ='    <label>Email</label>\n'
+          ='    <input class="form-control" type="text" placeholder="john@gmail.com">\n'
+          ='  </div>\n'
+          ='  <div class="form-group">\n'
+          ='    <label>Message</label>\n'
+          ='    <textarea class="form-control" rows="3"></textarea>\n'
+          ='  </div>\n'
+          ='  <button type="submit" class="btn btn-primary">Submit</button>\n'
+          ='</form>'
+
