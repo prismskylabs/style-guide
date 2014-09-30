@@ -17,6 +17,15 @@ module.exports = function( grunt ) {
       }
     },
 
+    copy: {
+      dist: {
+        files: [
+          { expand: true, src: 'sass/**', dest: 'dist/' },
+          { expand: true, src: 'assets/**', dest: 'dist/' }
+        ]
+      }
+    },
+
     autoprefixer: {
       options: {
         browsers: [ 'last 2 version', 'ie 9' ]
@@ -67,6 +76,7 @@ module.exports = function( grunt ) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
@@ -80,6 +90,7 @@ module.exports = function( grunt ) {
   // Local development without js checkers and watch task
   grunt.registerTask( 'build', [
     'sass:dev',
-    'autoprefixer'
+    'autoprefixer',
+    'copy:dist'
   ]);
 };
