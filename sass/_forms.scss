@@ -72,23 +72,6 @@ select[size] {
   height: auto;
 }
 
-// Focus for file, radio, and checkbox
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  @include tab-focus();
-}
-
-// Adjust output element
-output {
-  display: block;
-  padding-top: ($padding-base-vertical + 1);
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  color: $input-color;
-}
-
-
 // Common form controls
 //
 // Shared size and type resets for form controls. Apply `.form-control` to any
@@ -126,7 +109,6 @@ output {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
-  // Customize the `:focus` state to imitate native WebKit styles.
   &:focus {
     outline: none;
     border-color: $c-primary;
@@ -212,7 +194,6 @@ _:-ms-fullscreen, :root input[type="month"] {
 //
 // Designed to help with the organization and spacing of vertical forms. For
 // horizontal forms, use the predefined grid classes.
-
 .form-group {
   margin-bottom: 15px;
 }
@@ -408,89 +389,6 @@ input[type="checkbox"] {
 }
 
 
-// Inline forms
-//
-// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
-// forms begin stacked on extra small (mobile) devices and then go inline when
-// viewports reach <768px.
-//
-// Requires wrapping inputs and labels with `.form-group` for proper display of
-// default HTML form controls and our custom form controls (e.g., input groups).
-//
-// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
-
-.form-inline {
-
-  // Kick in the inline
-  @media (min-width: $screen-sm-min) {
-    // Inline-block all the things for "inline"
-    .form-group {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
-
-    // In navbar-form, allow folks to *not* use `.form-group`
-    .form-control {
-      display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
-    }
-
-    // Make static controls behave like regular ones
-    .form-control-static {
-      display: inline-block;
-    }
-
-    .input-group {
-      display: inline-table;
-      vertical-align: middle;
-
-      .input-group-addon,
-      .input-group-btn,
-      .form-control {
-        width: auto;
-      }
-    }
-
-    // Input groups need that 100% width though
-    .input-group > .form-control {
-      width: 100%;
-    }
-
-    .control-label {
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
-
-    // Remove default margin on radios/checkboxes that were used for stacking, and
-    // then undo the floating of radios and checkboxes to match (which also avoids
-    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
-    .radio,
-    .checkbox {
-      display: inline-block;
-      margin-top: 0;
-      margin-bottom: 0;
-      vertical-align: middle;
-
-      label {
-        padding-left: 0;
-      }
-    }
-    .radio input[type="radio"],
-    .checkbox input[type="checkbox"] {
-      position: relative;
-      margin-left: 0;
-    }
-
-    // Re-override the feedback icon.
-    .has-feedback .form-control-feedback {
-      top: 0;
-    }
-  }
-}
-
-
 // Horizontal forms
 //
 // Horizontal forms are built on grid classes and allow you to create forms with
@@ -557,4 +455,32 @@ input[type="checkbox"] {
       }
     }
   }
+}
+
+// Custom select styles
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: $input-color;
+    border: 1px solid $input-border;
+    border-radius: $input-border-radius;
+    background-color: transparent;
+
+    &:focus { outline: none; }
+}
+select:not([multiple]) {
+    background-image: url('../assets/down_arrow_11x11.png');
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+
+    // Firefox sucks, these are hacks to hide its select dropdown arrow
+    text-indent: 0.01px;
+    text-overflow: '';
+
+    // Light theme for when placed on dark backgrounds
+    &.light {
+        background-image: url('../assets/images/down_arrow_60_11x11.png');
+    }
 }
