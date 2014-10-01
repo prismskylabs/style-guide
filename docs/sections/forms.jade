@@ -80,3 +80,32 @@ section.forms-section.main-section
           ='  <button type="submit" class="btn btn-primary">Submit</button>\n'
           ='</form>'
 
+  h3.sub-section-header#forms-horz Horizontal forms
+  p By adding the <code>.form-horizontal</code> class to the form, you can now use grid classes to layout the form elements.
+  .prism-example
+    .example-content
+      form.form-horizontal
+        .form-group
+          label.col-sm-2.control-label Name
+          .col-sm-9
+            input(type='text',placeholder='John Smith').form-control
+        .form-group
+          label.col-sm-2.control-label Email
+          .col-sm-9
+            input(type='text',placeholder='john@gmail.com').form-control
+    .example-code
+      pre
+        code
+          ='<form class="form-horizontal">\n'
+          ='  <div class="form-group">\n'
+          ='    <label class="col-sm-2 control-label">Name</label>\n'
+          ='    <div class="col-sm-9">\n'
+          ='      <input type="text" placeholder="John Smith" class="form-control">\n'
+          ='    </div>\n'
+          ='  </div>\n'
+          ='  <div class="form-group">\n'
+          ='    <label class="col-sm-2 control-label">Email</label>\n'
+          ='    <div class="col-sm-9">\n'
+          ='      <input type="email" placeholder="john@gmail.com" class="form-control">\n'
+          ='    </div>\n'
+          ='  </div>'
