@@ -10,6 +10,30 @@ section.forms-section.main-section
           label Email
           input(type='text',placeholder='john@gmail.com').form-control
         .form-group
+          label Color
+          select.form-control
+            option Red
+            option Green
+            option Blue
+        .form-group
+          .checkbox
+            label
+              input(type='checkbox', value='a')
+              | Option A
+          .checkbox
+            label
+              input(type='checkbox', value='b')
+              | Option B
+        .form-group
+          .radio
+            label
+              input(type='radio', name='options')
+              | Option 1
+          .radio
+            label
+              input(type='radio', name='options')
+              | Option 2
+        .form-group
           label Message
           textarea(rows=3).form-control
         button(type='submit').btn.btn-primary Submit
@@ -20,6 +44,34 @@ section.forms-section.main-section
           ='  <div class="form-group">\n'
           ='    <label>Email</label>\n'
           ='    <input class="form-control" type="text" placeholder="john@gmail.com">\n'
+          ='  </div>\n'
+          ='  <div class="form-group">\n'
+          ='    <label>Color</label>\n'
+          ='    <input class="form-control" type="text" placeholder="john@gmail.com">\n'
+          ='  </div>\n'
+          ='  <div class="form-group">\n'
+          ='    <div class="checkbox">\n'
+          ='      <label>\n'
+          ='        <input type="checkbox" value="a"> Option A\n'
+          ='      </label>\n'
+          ='    </div>\n'
+          ='    <div class="checkbox">\n'
+          ='      <label>\n'
+          ='        <input type="checkbox" value="b"> Option B\n'
+          ='      </label>\n'
+          ='    </div>\n'
+          ='  </div>\n'
+          ='  <div class="form-group">\n'
+          ='    <div class="radio">\n'
+          ='      <label>\n'
+          ='        <input type="radio" value="1" name="options"> Option 1\n'
+          ='      </label>\n'
+          ='    </div>\n'
+          ='    <div class="radio">\n'
+          ='      <label>\n'
+          ='        <input type="radio" value="2" name="options"> Option 2\n'
+          ='      </label>\n'
+          ='    </div>\n'
           ='  </div>\n'
           ='  <div class="form-group">\n'
           ='    <label>Message</label>\n'
