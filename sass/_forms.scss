@@ -32,7 +32,6 @@ label {
   margin-bottom: 5px;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: $font-size-small;
 }
 
 
@@ -418,7 +417,7 @@ input[type="checkbox"] {
 
   // Make form groups behave like rows
   .form-group {
-    // .make-row();
+    @include make-row();
   }
 
   // Reset spacing and right align labels, but scope to media queries so that

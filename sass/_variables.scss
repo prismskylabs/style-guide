@@ -211,3 +211,26 @@ $input-group-addon-border-color: $input-border;
 
 $screen-sm-min: 1000px;
 $grid-gutter-width: 20px;
+
+
+// -----------------------------------------------------------------------------
+// Grid System
+// -----------------------------------------------------------------------------
+
+// Number of columns in the grid.
+$grid-columns: 12;
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px;
+
+// Container sizes
+$container-tablet: ((720px + $grid-gutter-width));
+$container-sm: $container-tablet;
+$container-desktop: ((940px + $grid-gutter-width));
+$container-md: $container-desktop;
+$container-large-desktop: ((1140px + $grid-gutter-width));
+$container-lg: $container-large-desktop;
+
+// Screen sizes for media queries
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
