@@ -49,6 +49,15 @@ module.exports = function( grunt ) {
       }
     },
 
+    connect: {
+      server: {
+        options: {
+          port: 8888,
+          base: 'docs'
+        }
+      }
+    },
+
     watch: {
       // Watch and compile sass files, but don't reload here
       sass: {
@@ -81,10 +90,12 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Local development with watch and js checkers
   grunt.registerTask( 'develop', [
     'build',
+    'connect',
     'watch'
   ]);
   // Local development without js checkers and watch task
