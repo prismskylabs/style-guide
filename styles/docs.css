@@ -1248,8 +1248,12 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
   height: 22px;
   line-height: 22px; }
 
-
-
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
+  color: #fc8b8b; }
+.has-error .form-control {
+  border-color: #fc8b8b; }
+  .has-error .form-control:focus {
+    border-color: #fb5959; }
 
 .has-feedback label ~ .form-control-feedback {
   top: 25px; }

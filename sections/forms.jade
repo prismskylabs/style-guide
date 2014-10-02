@@ -136,4 +136,24 @@ section.forms-section.main-section
           ='  <div class="form-group">\n'
           ='    <input type="text" placeholder="Small input" class="form-control input-sm">\n'
           ='  </div>\n'
-          ='  </div>'
+          ='</form>'
+
+  h3.sub-section-header#forms-errors Form errors
+  p Apply an error state by adding the <code>.has-error</code> class to an element and optionally adding an error message in the <code>.help-block</code>.
+  .prism-example
+    .example-content
+      form
+        .form-group.has-error
+          label.control-label Email
+          input(type='email',placeholder='john@gmail.com').form-control
+          span.help-block Your email isn't good enough
+    .example-code
+      pre
+        code
+          ='<form>\n'
+          ='  <div class="form-group has-error">\n'
+          ='    <label class="control-label">Email</label>\n'
+          ='    <input type="text" placeholder="john@gmail.com" class="form-control">\n'
+          ='    <span class="help-block">Your email isn\'t good enough</span>\n'
+          ='  </div>\n'
+          ='</form>'
