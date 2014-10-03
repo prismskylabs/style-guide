@@ -1,0 +1,7 @@
+<ul class="icon-list-wrap">
+  {{#each icons}}
+    {{#with this}}
+      <li class="icon-list-item"><h5>{{prefix}}{{name}}</h5><div class="{{prefixClass}}{{name}}" style="width: {{width}}px; height: {{height}}px;" ></div></li>
+    {{/with}}
+  {{/each}}
+</ul>

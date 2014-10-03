@@ -1462,4 +1462,25 @@ th {
   .colors-section .swatch.gray-lighter {
     background-color: #f2f2f2; }
 
-/*# sourceMappingURL=prism.css.map */
+.icons-section .icon-list-wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.icons-section .icon-list-item {
+  width: 25%;
+  height: 125px;
+  float: left;
+  padding: 15px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px solid #fff; }
+  .icons-section .icon-list-item h5 {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .icons-section .icon-list-item > div {
+    margin: auto; }
+
+.btn {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=docs.css.map */

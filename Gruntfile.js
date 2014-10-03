@@ -4,15 +4,24 @@ module.exports = function( grunt ) {
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
-      dev: {
+      dist: {
         files: {
-          'dist/prism.css': 'sass/prism.scss',
-          'docs/styles/docs.css': 'docs/styles/docs.scss'
+          'dist/prism.css': 'sass/prism.scss'
         },
         options: {
           includePaths: [ 'bower_components/' ],
           sourceComments: 'map',
           sourceMap: 'dist/prism.css.map'
+        }
+      },
+      docs: {
+        files: {
+          'docs/styles/docs.css': 'docs/styles/docs.scss'
+        },
+        options: {
+          includePaths: [ 'bower_components/' ],
+          sourceComments: 'map',
+          sourceMap: 'docs/styles/docs.css.map'
         }
       }
     },
@@ -20,8 +29,12 @@ module.exports = function( grunt ) {
     copy: {
       dist: {
         files: [
-          { expand: true, src: 'sass/**', dest: 'dist/' },
-          { expand: true, src: 'assets/**', dest: 'dist/' }
+          { expand: true, src: 'sass/**', dest: 'dist/' }
+        ]
+      },
+      docs: {
+        files: [
+          { expand: true, src: 'dist/**', dest: 'docs/' }
         ]
       }
     },
@@ -58,6 +71,38 @@ module.exports = function( grunt ) {
       }
     },
 
+    grunticon: {
+        myIcons: {
+            files: [{
+                expand: true,
+                cwd: 'assets/icons',
+                src: ['*.svg', '*.png'],
+                dest: "dist/assets/icons"
+            }],
+            options: {
+              previewTemplate: './assets/icons/_preview-template.hbs',
+              colors: {
+                graydarker: '#ff0000',
+                graydark: '#ff0000',
+                gray: '#ff0000',
+                graylight: '#ff0000',
+                graylighter: '#ff0000',
+                primary: '#ff0000',
+                success: '#ff0000',
+                info: '#ff0000',
+                danger: '#ff0000'
+              }
+            }
+        }
+    },
+
+    concat: {
+      dist: {
+        src: [ 'dist/prism.css', 'dist/assets/icons/icons.data.svg.css' ],
+        dest: 'dist/prism-with-icons.css'
+      }
+    },
+
     watch: {
       // Watch and compile sass files, but don't reload here
       sass: {
@@ -91,6 +136,8 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Local development with watch and js checkers
   grunt.registerTask( 'develop', [
@@ -100,8 +147,13 @@ module.exports = function( grunt ) {
   ]);
   // Local development without js checkers and watch task
   grunt.registerTask( 'build', [
-    'sass:dev',
+    'grunticon',
+    'sass:dist',
+    'sass:docs',
     'autoprefixer',
-    'copy:dist'
+    'copy:dist',
+    'copy:docs',
+    'concat:dist',
+    'jade'
   ]);
 };
