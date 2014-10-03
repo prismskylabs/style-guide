@@ -1,4 +1,4 @@
-@import "../../sass/prism";
+@import "../dist/sass/prism";
 
 .styleguide-nav {
   position: fixed;
@@ -112,5 +112,34 @@
     &.gray-light { background-color: $c-gray-light; }
     &.gray-lighter { background-color: $c-gray-lighter; }
   }
+}
+
+.icons-section {
+  .icon-list-wrap {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .icon-list-item {
+    width: 25%;
+    height: 125px;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    background-color: $c-gray-lighter;
+    border: 1px solid #fff;
+    h5 {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    > div {
+      margin: auto;
+    }
+  }
+}
+
+
+.btn {
+  margin-right: 10px;
 }
 
