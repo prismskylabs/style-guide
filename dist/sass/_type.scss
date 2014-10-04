@@ -1,0 +1,96 @@
+// Typography
+
+// Headings
+h1, h2, h3, h4, h5 { margin: 0 }
+
+h1,
+.h1 {
+    @extend %sans-serif-light;
+    font-size: $font-size-h1;
+    @include bp(phone) { font-size: $font-size-h1-mobile; }
+}
+h2,
+.h2 {
+    @extend %sans-serif-medium;
+    font-size: $font-size-h2;
+    @include bp(phone) { font-size: $font-size-h2-mobile; }
+}
+h3,
+.h3 {
+    @extend %sans-serif-medium;
+    font-size: $font-size-h3;
+    @include bp(phone) { font-size: $font-size-h3-mobile; }
+}
+h4,
+.h4 {
+    @extend %sans-serif-medium;
+    font-size: $font-size-h4;
+    text-transform: uppercase;
+    @include bp(phone) { font-size: $font-size-h4-mobile; }
+}
+h5,
+.h5 {
+    @extend %sans-serif-light;
+    font-size: $font-size-h5;
+    text-transform: uppercase;
+    @include bp(phone) { font-size: $font-size-h5-mobile; }
+}
+
+// Body text
+p, span, input, textarea, button { @extend %sans-serif-light; }
+p {
+    font-size: $font-size-base;
+    line-height: 1.6;
+    margin: 0 0 1em 0;
+    @include bp(phone) { font-size: $font-size-base-mobile; }
+}
+p.small {
+    font-size: $font-size-small;
+    line-height: 1.6;
+    @include bp(phone) { font-size: $font-size-small-mobile; }
+}
+p.large {
+    font-size: $font-size-large;
+    @include bp(phone) { font-size: $font-size-large-mobile; }
+}
+span {
+    font-size: $font-size-base;
+    @include bp(phone) { font-size: $font-size-base-mobile; }
+}
+span.small {
+    font-size: $font-size-small;
+    @include bp(phone) { font-size: $font-size-small-mobile; }
+}
+span.large {
+    font-size: $font-size-large;
+    @include bp(phone) { font-size: $font-size-large-mobile; }
+}
+
+// Links
+a {
+  color: $c-primary;
+  text-decoration: none;
+  &:hover {
+    color: $c-primary-darker;
+  }
+}
+
+// Alignment
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.text-nowrap { white-space: nowrap; }
+
+// Transformation
+.text-lowercase { text-transform: lowercase; }
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+
+// Code and pre blocks
+code,
+pre {
+  font-family: $monospace-font-family;
+  font-size: $font-size-base;
+  line-height: 1.4;
+}

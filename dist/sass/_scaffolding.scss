@@ -1,0 +1,25 @@
+// Scaffolding
+
+// Use natural box layout model for all elements.
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+// Body reset
+body {
+  @extend %sans-serif-light;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $c-gray-darker;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
