@@ -1,0 +1,42 @@
+@mixin bp($point) {
+
+  $bp-phone: "(max-width: 599px)";
+  $bp-phone-landscape: "(max-width: 599px) and (orientation : landscape)";
+  $bp-ipad-vert: "(min-width: 600px) and (max-width: 899px)";
+  $bp-ipad-horz: "(min-width: 900px) and (max-width: 1299px)";
+  $bp-ipad: "(min-width: 600px) and (max-width: 1299px)";
+  $bp-default: "(min-width: 1300px) and (max-width: 1599px)";
+  $bp-large: "(min-width: 1600px) and (max-width: 1920px)";
+  $bp-huge: "(min-width: 1921px)";
+
+  $bp-mobile: "(max-width: 1299px)";
+
+  @if $point == phone {
+    @media #{$bp-phone} { @content; }
+  }
+  @else if $point == phone-landscape {
+    @media #{$bp-phone-landscape} { @content; }
+  }
+  @else if $point == ipad-vert {
+    @media #{$bp-ipad-vert} { @content; }
+  }
+  @else if $point == ipad-horz {
+    @media #{$bp-ipad-horz} { @content; }
+  }
+  @else if $point == ipad {
+    @media #{$bp-ipad} { @content; }
+  }
+  @else if $point == default {
+    @media #{$bp-default} { @content; }
+  }
+  @else if $point == large {
+    @media #{$bp-large}  { @content; }
+  }
+  @else if $point == huge {
+    @media #{$bp-huge}  { @content; }
+  }
+  @else if $point == mobile {
+    @media #{$bp-mobile}  { @content; }
+  }
+
+}

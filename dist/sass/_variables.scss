@@ -1,0 +1,236 @@
+// Variables
+
+// -----------------------------------------------------------------------------
+// Colors
+// -----------------------------------------------------------------------------
+
+// Greys
+$gray-base: #000;
+$c-gray-darker: lighten($gray-base, 20%);
+$c-gray-dark: lighten($gray-base, 40%);
+$c-gray: lighten($gray-base, 60%);
+$c-gray-light: lighten($gray-base, 80%);
+$c-gray-lighter: lighten($gray-base, 95%);
+
+// Greens
+$green-darker: #01a510;
+$green-dark: #25bb41;
+$green: #56d980;
+$green-light: #7befb1;
+
+// Blue Greens
+$blue-green-darker: #00979e;
+$blue-green-dark: #15a9ab;
+$blue-green: #3eccc4;
+$blue-green-light: #67efde;
+
+// Blues
+$blue-darker: #1686c5;
+$blue-dark: #2b9dd0;
+$blue: #00c5e5;
+$blue-light: #6ce1f2;
+
+// Reds
+$red-darker: #d83d3d;
+$red-dark: #e55e5e;
+$red: #fc8b8b;
+$red-light: #fbb;
+
+// Color mappings
+$c-primary: $blue;
+$c-success: $green;
+$c-info: $blue-green;
+$c-danger: $red;
+
+$c-primary-darker: $blue-darker;
+$c-success-darker: $green-darker;
+$c-info-darker: $blue-green-darker;
+$c-danger-darker: $red-darker;
+
+$c-primary-dark: $blue-dark;
+$c-success-dark: $green-dark;
+$c-info-dark: $blue-green-dark;
+$c-danger-dark: $red-dark;
+
+$c-primary-light: $blue-light;
+$c-success-light: $green-light;
+$c-info-light: $blue-green-light;
+$c-danger-light: $red-light;
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+// Font sizes
+$font-size-base: 14px;
+$font-size-large: 16px;
+$font-size-small: 11px;
+
+$font-size-h1: 24px;
+$font-size-h2: 22px;
+$font-size-h3: 14px;
+$font-size-h4: 11px;
+$font-size-h5: 11px;
+
+// Line heights
+$line-height-base: 1.428571429; // 20/14;
+$line-height-computed: floor(($font-size-base * $line-height-base)); //~20px
+
+// Mobile font sizes
+$font-size-base-mobile: 12px;
+$font-size-large-mobile: 14px;
+$font-size-small-mobile: 10px;
+
+$font-size-h1-mobile: 22px;
+$font-size-h2-mobile: 20px;
+$font-size-h3-mobile: 12px;
+$font-size-h4-mobile: 10px;
+$font-size-h5-mobile: 10px;
+
+// Font family and weight
+$gotham-font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$monospace-font-family: menlo, monaco, monospace;
+$gotham-light-weight: 300;
+$gotham-medium-weight: 500;
+
+%sans-serif-light {
+    font-family: $gotham-font-family;
+    font-weight: $gotham-light-weight;
+    font-style: normal;
+}
+
+%sans-serif-medium {
+    font-family: $gotham-font-family;
+    font-weight: $gotham-medium-weight;
+    font-style: normal;
+}
+
+
+// -----------------------------------------------------------------------------
+// Components
+// -----------------------------------------------------------------------------
+
+$padding-base-vertical: 4px;
+$padding-base-horizontal: 10px;
+
+$padding-large-vertical: 10px;
+$padding-large-horizontal: 16px;
+
+$padding-small-vertical: 2px;
+$padding-small-horizontal: 5px;
+
+$line-height-large: 1.33;
+$line-height-small: 1.5;
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+$component-active-color: #fff;
+$component-active-bg: $c-primary;
+
+
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+
+$btn-font-weight: 300;
+
+// Define text, background and border color for each button type
+$btn-default-color: $c-gray-darker;
+$btn-default-bg: transparent;
+$btn-default-border: $c-gray-darker;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $c-primary;
+$btn-primary-border: $c-primary;
+
+$btn-success-color: #fff;
+$btn-success-bg: $c-success;
+$btn-success-border: $c-success;
+
+$btn-info-color: #fff;
+$btn-info-bg: $c-info;
+$btn-info-border: $c-info;
+
+$btn-danger-color: #fff;
+$btn-danger-bg: $c-danger;
+$btn-danger-border: $c-danger;
+
+
+// -----------------------------------------------------------------------------
+// Tables
+// -----------------------------------------------------------------------------
+
+// Padding for td and th
+$table-cell-padding: 7px;
+$table-condensed-cell-padding:  2px;
+
+// Background and hovre colors
+$table-bg: transparent;
+$table-bg-accent: $c-gray-lighter;
+$table-bg-hover: $c-gray-light;
+$table-bg-active: $c-gray-light;
+
+// Border colors
+$table-border-color: $c-gray-lighter;
+
+
+// -----------------------------------------------------------------------------
+// Forms
+// -----------------------------------------------------------------------------
+
+// <input> colors
+$input-bg: #fff;
+$input-bg-disabled: $c-gray-lighter;
+$input-color: $c-gray-darker;
+$input-border: #ccc;
+
+// Border radius for inputs
+$input-border-radius: $border-radius-base;
+$input-border-radius-large: $border-radius-large;
+$input-border-radius-small: $border-radius-small;
+
+// Border color for inputs on focus
+$input-border-focus: #66afe9;
+
+// Placeholder text color
+$input-color-placeholder: #999;
+
+// `.form-control` heights
+$input-height-base: ($line-height-computed + ($padding-base-vertical * 2) + 2);
+$input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
+$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
+
+$legend-color: $c-gray-dark;
+$legend-border-color: #e5e5e5;
+
+$input-group-addon-bg: $c-gray-lighter;
+$input-group-addon-border-color: $input-border;
+
+$screen-sm-min: 1000px;
+$grid-gutter-width: 20px;
+
+
+// -----------------------------------------------------------------------------
+// Grid System
+// -----------------------------------------------------------------------------
+
+// Number of columns in the grid.
+$grid-columns: 12;
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px;
+
+// Container sizes
+$container-tablet: ((720px + $grid-gutter-width));
+$container-sm: $container-tablet;
+$container-desktop: ((940px + $grid-gutter-width));
+$container-md: $container-desktop;
+$container-large-desktop: ((1140px + $grid-gutter-width));
+$container-lg: $container-large-desktop;
+
+// Screen sizes for media queries
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;

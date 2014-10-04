@@ -1,0 +1,87 @@
+// Tables
+// Bootstrap tables: https://github.com/twbs/bootstrap/blob/master/less/tables.less
+
+th {
+  text-align: left;
+  font-weight: 500;
+}
+
+// Base styles
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $line-height-computed;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          padding: $table-cell-padding;
+          padding-bottom: $table-cell-padding  * 1.2;
+          line-height: $line-height-base * 1.4;
+          vertical-align: top;
+          border-top: 1px solid $table-border-color;
+        }
+      }
+    }
+    // Bottom align for column headings
+    > thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid $table-border-color;
+      text-transform: uppercase;
+    }
+    // Remove top border from thead by default
+    > caption + thead,
+    > colgroup + thead,
+    > thead:first-child {
+      > tr:first-child {
+        > th,
+        > td {
+          border-top: 0;
+        }
+      }
+    }
+    // Account for multiple tbody instances
+    > tbody + tbody {
+      border-top: 2px solid $table-border-color;
+    }
+
+    // Nesting
+    .table {
+      background-color: #fff;
+    }
+
+    // Striped table by default
+    > tbody > tr:nth-child(odd) {
+      background-color: $table-bg-accent;
+    }
+}
+
+// Condensed table padding
+.table-condensed {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-condensed-cell-padding;
+      }
+    }
+  }
+}
+
+// Remove alternating stripes
+.table-nostripes {
+  > tbody > tr:nth-child(odd) {
+    background-color: $table-bg;
+  }
+}
+
+// Highlight row on hover. Overrides alternating colors.
+.table-hover {
+  > tbody > tr:hover {
+    background-color: $table-bg-hover;
+  }
+}
