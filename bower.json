@@ -5,9 +5,5 @@
   "homepage": "http://prism.com",
   "ignore": [
     "/.*"
-  ],
-  "dependencies": {
-    "normalize.css": "~3.0.1",
-    "prismjs": "*"
-  }
+  ]
 }

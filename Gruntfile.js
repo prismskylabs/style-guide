@@ -9,19 +9,8 @@ module.exports = function( grunt ) {
           'dist/prism.css': 'sass/prism.scss'
         },
         options: {
-          includePaths: [ 'bower_components/' ],
           sourceComments: 'map',
           sourceMap: 'dist/prism.css.map'
-        }
-      },
-      docs: {
-        files: {
-          'docs/styles/docs.css': 'docs/styles/docs.scss'
-        },
-        options: {
-          includePaths: [ 'bower_components/' ],
-          sourceComments: 'map',
-          sourceMap: 'docs/styles/docs.css.map'
         }
       }
     },
@@ -46,19 +35,6 @@ module.exports = function( grunt ) {
       dev: {
         src: 'dist/prism.css',
         dest: 'dist/prism.css'
-      }
-    },
-
-    jade: {
-      compile: {
-        options: {
-          data: {
-            debug: true
-          }
-        },
-        files: {
-          'docs/index.html': [ 'docs/index.jade' ]
-        }
       }
     },
 
@@ -107,22 +83,15 @@ module.exports = function( grunt ) {
       // Watch and compile sass files, but don't reload here
       sass: {
         files: [
-          'sass/**/*.scss',
-          'docs/styles/**/*.scss'
+          'sass/**/*.scss'
         ],
         tasks: [ 'sass:dev', 'autoprefixer' ]
-      },
-      jade: {
-        files: [ 'docs/**/*.jade' ],
-        tasks: [ 'jade' ],
-        options: { livereload: true }
       },
       // Watch the compiled css files and reload here. Do this for preprocessors because the
       // file watched with options livereload is sent to the server. Dont send sass this way
       livereload: {
         files: [
-          'dist/prism.css',
-          'docs/styles/docs.css'
+          'dist/prism.css'
         ],
         options: { livereload: true }
       }
@@ -134,7 +103,6 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -149,11 +117,9 @@ module.exports = function( grunt ) {
   grunt.registerTask( 'build', [
     'grunticon',
     'sass:dist',
-    'sass:docs',
     'autoprefixer',
     'copy:dist',
     'copy:docs',
-    'concat:dist',
-    'jade'
+    'concat:dist'
   ]);
 };
