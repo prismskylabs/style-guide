@@ -1,5 +1,4 @@
 highlighter: pygments
-source: docs
 
 sass:
   sass_dir: dist/sass
