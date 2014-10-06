@@ -1,0 +1,85 @@
+<section class="typography-section main-section">
+  <h2 id="typography" class="section-header">Typography</h2>
+  <h3 id="headings" class="sub-section-header">Headings</h3>
+  <p>Headings <code>&lt;h1&gt;</code> through <code>&lt;h5&gt;</code> are available. You can also apply <code>.h1</code> through <code>.h5</code> classes to match header styles without display block.</p>
+  <div class="prism-example headers">
+    <div class="example-content">
+      <h1>h1: Prism Skylabs Heading</h1>
+      <h2>h2: Prism Skylabs Heading</h2>
+      <h3>h3: Prism Skylabs Heading</h3>
+      <h4>h4: Prism Skylabs Heading</h4>
+      <h5>h5: Prism Skylabs Heading</h5>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<h1>h1: Prism Skylabs Heading</h1>
+<h2>h2: Prism Skylabs Heading</h2>
+<h3>h3: Prism Skylabs Heading</h3>
+<h4>h4: Prism Skylabs Heading</h4>
+<h5>h5: Prism Skylabs Heading</h5>
+{% endhighlight %}
+    </div>
+  </div>
+  <h3 id="body-text" class="sub-section-header">Body text</h3>
+  <p>The default <code>font-size</code> for all elements is 14px. There is both a large (16px) and small (12px) size that can be applied to paragraphs or spans. Paragraphs have a <code>margin-bottom</code> of 1em.</p>
+  <div class="prism-example p">
+    <div class="example-content">
+      <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit sollicitudin mi, a congue sapien lacinia in. Maecenas viverra massa vel aliquam suscipit. Aliquam sodales erat in elit lacinia, eget feugiat enim feugiat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit sollicitudin mi, a congue sapien lacinia in. Maecenas viverra massa vel aliquam suscipit. Aliquam sodales erat in elit lacinia, eget feugiat enim feugiat.</p>
+      <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit sollicitudin mi, a congue sapien lacinia in. Maecenas viverra massa vel aliquam suscipit. Aliquam sodales erat in elit lacinia, eget feugiat enim feugiat.</p>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<p class="large"> ... </p>
+<p> ... </p>
+<p class="small"> ... </p>
+{% endhighlight %}
+    </div>
+  </div>
+  <div class="prism-example span">
+    <div class="example-content"><span class="large">Lorem ipsum dolor sit amet.</span><span>Lorem ipsum dolor sit amet.</span><span class="small">Lorem ipsum dolor sit amet.</span></div>
+    <div class="example-code">
+{% highlight html %}
+<span class="large"> ... </span>
+<span> ... </span>
+<span class="small"> ... </span>
+{% endhighlight %}
+    </div>
+  </div>
+  <h3 id="alignment-classes" class="sub-section-header">Alignment classes</h3>
+  <p>Alignment classes are used to easily set the alignment on text elements.</p>
+  <div class="prism-example">
+    <div class="example-content">
+      <p class="text-left">Left algined text.</p>
+      <p class="text-center">Center aligned text.</p>
+      <p class="text-right">Right aligned text.</p>
+      <p class="text-justify">Justified text.</p>
+      <p class="text-nowrap">No wrap text.</p>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+{% endhighlight %}
+    </div>
+  </div>
+  <h3 id="transformation-classes" class="sub-section-header">Transformation classes</h3>
+  <p>A collection of easy to apply, semantic button styles. Suggested use is outlined in the comments below.</p>
+  <div class="prism-example">
+    <div class="example-content">
+      <p class="text-lowercase">Lowercased text.</p>
+      <p class="text-uppercase">Uppercased text.</p>
+      <p class="text-capitalize">capitalized text.</p>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">capitalized text.</p>
+{% endhighlight %}
+    </div>
+  </div>
+</section>

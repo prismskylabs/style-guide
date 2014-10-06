@@ -1,0 +1,87 @@
+<section class="buttons-section main-section">
+  <h2 id="buttons" class="section-header">Buttons</h2>
+  <h3 id="button-options" class="sub-section-header">Options</h3>
+  <p>A collection of easy to apply, semantic button styles. Suggested use is outlined in the comments below.</p>
+  <div class="prism-example">
+    <div class="example-content">
+      <button type="button" class="btn">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+    <div class="example-code">
+
+{% highlight html %}
+<!-- Default button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- The primary action in groups of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- A positive or successful action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- For secondary actions or information/context -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- A dangeroud or potentially irreversible action -->
+<button type="button" class="btn btn-danger">Danger</button>
+{% endhighlight %}
+
+    </div>
+  </div>
+  <h3 id="button-sizes" class="sub-section-header">Sizes</h3>
+  <p>The default button can be made larger by applying the <code>.btn-lg</code> class, or smaller with <code>.btn-sm</code>.</p>
+  <div class="prism-example">
+    <div class="example-content">
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-primary">Default button</button>
+      <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-primary">Default button</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+{% endhighlight %}
+    </div>
+  </div>
+  <h3 id="button-disabled" class="sub-section-header">Disabled state</h3>
+  <p>Make buttons look unclickable. Use either <code>.disabled</code> class or <code>disabled</code> attribute.</p>
+  <div class="prism-example">
+    <div class="example-content">
+      <button type="button" class="btn disabled">Default</button>
+      <button type="button" disabled="true" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success disabled">Success</button>
+      <button type="button" class="btn btn-info disabled">Info</button>
+      <button type="button" class="btn btn-danger disabled">Danger</button>
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<button type="button" class="btn btn-default disabled">Default</button>
+<button type="button" class="btn btn-primary" disabled="true">Primary</button>
+<button type="button" class="btn btn-success disabled">Success</button>
+<button type="button" class="btn btn-info disabled">Info</button>
+<button type="button" class="btn btn-danger disabled">Danger</button>
+{% endhighlight %}
+    </div>
+  </div>
+  <h3 id="button-tags" class="sub-section-header">Button tags</h3>
+  <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code> or <code>&lt;input&gt;</code> element.</p>
+  <div class="prism-example">
+    <div class="example-content"><a href="#" role="button" class="btn btn-primary">Link</a>
+      <button role="button" class="btn btn-primary">Button</button>
+      <input type="button" value="Input" class="btn btn-primary">
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </div>
+    <div class="example-code">
+{% highlight html %}
+<a href="#" role="button" class="btn btn-primary">Link</a>
+<button role="button" class="btn btn-primary">Button</button>
+<input type="button" value="Input" class="btn btn-primary">
+<input type="submit" value="Submit" class="btn btn-primary">
+{% endhighlight %}
+    </div>
+  </div>
+</section>
