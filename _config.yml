@@ -1,0 +1,4 @@
+highlighter: pygments
+
+sass:
+  sass_dir: dist/sass
