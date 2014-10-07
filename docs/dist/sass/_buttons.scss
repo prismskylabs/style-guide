@@ -44,14 +44,26 @@
 .btn-primary {
   @include button-variant( $btn-primary-color, $btn-primary-bg, $btn-primary-border );
 }
+.btn-primary-link {
+  @include button-variant( $btn-primary-bg, transparent, transparent );
+}
 .btn-success {
   @include button-variant( $btn-success-color, $btn-success-bg, $btn-success-border );
+}
+.btn-success-link {
+  @include button-variant( $btn-success-bg, transparent, transparent );
 }
 .btn-info {
   @include button-variant( $btn-info-color, $btn-info-bg, $btn-info-border );
 }
+.btn-info-link {
+  @include button-variant( $btn-info-bg, transparent, transparent );
+}
 .btn-danger {
   @include button-variant( $btn-danger-color, $btn-danger-bg, $btn-danger-border );
+}
+.btn-danger-link {
+  @include button-variant( $btn-danger-bg, transparent, transparent );
 }
 
 // Button sizes
