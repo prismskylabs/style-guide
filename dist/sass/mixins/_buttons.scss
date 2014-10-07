@@ -11,8 +11,16 @@
   &:active,
   &.active {
     color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 10%);
+    @if $background == transparent {
+      background-color: transparent;
+    } @else {
+      background-color: darken($background, 10%);
+    }
+    @if $border == transparent {
+      border-color: transparent;
+    } @else {
+      border-color: darken($border, 10%);
+    }
   }
 }
 
