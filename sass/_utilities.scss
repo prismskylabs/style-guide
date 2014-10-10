@@ -4,3 +4,7 @@
   display: none !important;
   visibility: hidden !important;
 }
+
+.clearfix {
+  @include clearfix();
+}

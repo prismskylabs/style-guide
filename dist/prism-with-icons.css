@@ -1003,6 +1003,15 @@ code, pre {
     opacity: 0.4;
     box-shadow: none; }
 
+.btn-default {
+  color: #333333;
+  background-color: transparent;
+  border-color: #333333; }
+  .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+    color: #333333;
+    background-color: transparent;
+    border-color: #1a1a1a; }
+
 .btn-primary {
   color: #fff;
   background-color: #00c5e5;
@@ -1108,8 +1117,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: 500;
-  text-transform: uppercase; }
+  font-weight: 500; }
 
 input[type="search"] {
   -moz-box-sizing: border-box;
@@ -1138,7 +1146,7 @@ select[multiple], select[size] {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: transparent;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 0;
@@ -1321,7 +1329,7 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
     clear: both; }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    text-align: right;
+    text-align: left;
     margin-bottom: 0;
     padding-top: 5px; } }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -1342,6 +1350,8 @@ select {
   background-color: transparent; }
   select:focus {
     outline: none; }
+  select.controls {
+    border: #333333; }
 
 select:not([multiple]) {
   background-image: url('../assets/down_arrow_11x11.png');
@@ -1392,6 +1402,11 @@ th {
 .hide {
   display: none !important;
   visibility: hidden !important; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 /*# sourceMappingURL=prism.css.map */
 .icon-adv-analytics-24 { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20enable-background%3D%22new%200%200%2024%2024%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cg%3E%20%20%3Crect%20x%3D%227%22%20y%3D%2217%22%20fill%3D%22%23333333%22%20width%3D%221%22%20height%3D%224%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20x%3D%224%22%20y%3D%2220%22%20fill%3D%22%23333333%22%20width%3D%221%22%20height%3D%221%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20x%3D%2216%22%20y%3D%2214%22%20fill%3D%22%23333333%22%20width%3D%221%22%20height%3D%227%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20x%3D%2210%22%20y%3D%2214%22%20fill%3D%22%23333333%22%20width%3D%221%22%20height%3D%227%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Crect%20x%3D%2213%22%20y%3D%2217%22%20fill%3D%22%23333333%22%20width%3D%221%22%20height%3D%224%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23333333%22%20points%3D%224.1%2C16.8%203.4%2C16.1%2011.2%2C8.3%2014.2%2C11.3%2019.9%2C5.6%2020.6%2C6.3%2014.2%2C12.7%2011.2%2C9.7%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23333333%22%20points%3D%2221%2C10%2020%2C10%2020%2C6%2016%2C6%2016%2C5%2021%2C5%20%20%20%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
 

@@ -31,7 +31,6 @@ label {
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 
@@ -428,11 +427,11 @@ input[type="checkbox"] {
     @include make-row();
   }
 
-  // Reset spacing and right align labels, but scope to media queries so that
+  // Reset spacing and left align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: $screen-sm-min) {
     .control-label {
-      text-align: right;
+      text-align: left;
       margin-bottom: 0;
       padding-top: ($padding-base-vertical + 1); // Default padding plus a border
     }
@@ -477,6 +476,9 @@ select {
     background-color: transparent;
 
     &:focus { outline: none; }
+    &.controls {
+      border: $c-gray-darker;
+    }
 }
 select:not([multiple]) {
     background-image: url('../assets/down_arrow_11x11.png');
