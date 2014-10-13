@@ -8,7 +8,10 @@
   "description": "Prism Skylabs base style guide for all web projects",
   "license": "MIT",
   "main": [
-    "dist/prism-with-icons.css"
+    "dist/prism-with-icons.css",
+    "dist/prism-with-icons.css",
+    "dist/assets/**",
+    "dist/sass"
   ],
   "ignore": [
     "**/.*",
