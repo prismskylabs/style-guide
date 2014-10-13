@@ -11,5 +11,5 @@ Documentation is a [Jekyll](http://jekyllrb.com) site that is publicly hosted at
 
 ### Deploying documentation
 The documents are hosted using GitHub Pages from the gh-pages branch. Since GitHub only allows you to run Jekyll with the source set to the root of the repository, we have to build the gh-pages branch as a subtree from master.
-Run the following command from inside the repo to deploy the docs: `git subtree push --prefix dist origin gh-pages`.
+Run the following command from inside the repo to deploy the docs: `git subtree push --prefix docs origin gh-pages`.
 Once that is done, the changes should be viewable nearly immediately.
