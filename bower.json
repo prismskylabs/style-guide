@@ -1,9 +1,24 @@
 {
   "name": "prism-style-guide",
-  "description": "Prism Skylabs base style guide for all web projects",
   "version": "0.1.0",
-  "homepage": "http://prism.com",
+  "homepage": "http://prismskylabs.github.io/style-guide/",
+  "authors": [
+    "Riley Tomasek <riley.tomasek@gmail.com>"
+  ],
+  "description": "Prism Skylabs base style guide for all web projects",
+  "license": "MIT",
+  "main": [
+    "dist/prism-with-icons.css"
+  ],
   "ignore": [
-    "/.*"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "_config.yml",
+    "CNAME",
+    "CONTRIBUTING.md",
+    "docs"
   ]
 }
