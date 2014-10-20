@@ -481,9 +481,7 @@ select {
     }
 }
 select:not([multiple]) {
-    background-image: url('../assets/down_arrow_11x11.png');
-    background-size: 11px 11px;
-    background-repeat: no-repeat;
+    @extend .icon-arrow-down-24;
     background-position: right 4px center;
 
     // Firefox sucks, these are hacks to hide its select dropdown arrow
