@@ -27,7 +27,8 @@ module.exports = function( grunt ) {
       },
       docs: {
         files: [
-          { expand: true, src: 'dist/**', dest: 'docs/' }
+          { expand: true, src: 'dist/**', dest: 'docs/' },
+          { exapnd: true, src: 'dist/assets/icons/preview.html', dest: 'docs/_includes/generated-icons.html' }
         ]
       }
     },
