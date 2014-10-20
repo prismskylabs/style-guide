@@ -21,6 +21,10 @@ module.exports = function( grunt ) {
           { expand: true, src: 'sass/**', dest: 'dist/' }
         ]
       },
+      icons: {
+        src: 'dist/assets/icons/icons.data.svg.css',
+        dest: 'sass/icons/_icons.scss'
+      },
       docs: {
         files: [
           { expand: true, src: 'dist/**', dest: 'docs/' }
@@ -72,13 +76,6 @@ module.exports = function( grunt ) {
         }
     },
 
-    concat: {
-      dist: {
-        src: [ 'dist/prism.css', 'dist/assets/icons/icons.data.svg.css' ],
-        dest: 'dist/prism-with-icons.css'
-      }
-    },
-
     watch: {
       // Watch and compile sass files, but don't reload here
       sass: {
@@ -105,7 +102,6 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-grunticon');
-  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Local development with watch and js checkers
   grunt.registerTask( 'develop', [
@@ -116,10 +112,10 @@ module.exports = function( grunt ) {
   // Local development without js checkers and watch task
   grunt.registerTask( 'build', [
     'grunticon',
+    'copy:icons',
     'sass:dist',
     'autoprefixer',
     'copy:dist',
     'copy:docs',
-    'concat:dist'
   ]);
 };
