@@ -1510,7 +1510,8 @@ select {
     border: #333333; }
 
 select:not([multiple]) {
-  background-position: right 4px center;
+  background-position: right center;
+  padding-right: 24px;
   text-indent: 0.01px;
   text-overflow: ''; }
   select:not([multiple]).light {

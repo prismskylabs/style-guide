@@ -482,7 +482,8 @@ select {
 }
 select:not([multiple]) {
     @extend .icon-arrow-down-24;
-    background-position: right 4px center;
+    background-position: right center;
+    padding-right: 24px;
 
     // Firefox sucks, these are hacks to hide its select dropdown arrow
     text-indent: 0.01px;
