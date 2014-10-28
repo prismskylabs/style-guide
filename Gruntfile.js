@@ -63,15 +63,15 @@ module.exports = function( grunt ) {
             options: {
               previewTemplate: './assets/icons/_preview-template.hbs',
               colors: {
-                graydarker: '#ff0000',
-                graydark: '#ff0000',
-                gray: '#ff0000',
-                graylight: '#ff0000',
-                graylighter: '#ff0000',
-                primary: '#ff0000',
-                success: '#ff0000',
-                info: '#ff0000',
-                danger: '#ff0000'
+                graydarker: '#333',
+                graydark: '#666',
+                gray: '#999',
+                graylight: '#ccc',
+                graylighter: '#f2f2f2',
+                primary: '#00c5e5',
+                success: '#56d980',
+                info: '#3eccc4',
+                danger: '#fc8b8b'
               }
             }
         }
