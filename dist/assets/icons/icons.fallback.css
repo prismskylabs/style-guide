@@ -28,6 +28,8 @@
 
 .icon-download-24 { background-image: url('png/download-24.png'); background-repeat: no-repeat; }
 
+.icon-edit-24-primary { background-image: url('png/edit-24-primary.png'); background-repeat: no-repeat; }
+
 .icon-edit-24 { background-image: url('png/edit-24.png'); background-repeat: no-repeat; }
 
 .icon-ellipses-24 { background-image: url('png/ellipses-24.png'); background-repeat: no-repeat; }
@@ -35,6 +37,10 @@
 .icon-email-24 { background-image: url('png/email-24.png'); background-repeat: no-repeat; }
 
 .icon-extend-storage-24 { background-image: url('png/extend-storage-24.png'); background-repeat: no-repeat; }
+
+.icon-eye-24-graydark { background-image: url('png/eye-24-graydark.png'); background-repeat: no-repeat; }
+
+.icon-eye-24-primary { background-image: url('png/eye-24-primary.png'); background-repeat: no-repeat; }
 
 .icon-eye-24 { background-image: url('png/eye-24.png'); background-repeat: no-repeat; }
 
@@ -81,6 +87,8 @@
 .icon-site-24 { background-image: url('png/site-24.png'); background-repeat: no-repeat; }
 
 .icon-star-24 { background-image: url('png/star-24.png'); background-repeat: no-repeat; }
+
+.icon-trash-24-danger { background-image: url('png/trash-24-danger.png'); background-repeat: no-repeat; }
 
 .icon-trash-24 { background-image: url('png/trash-24.png'); background-repeat: no-repeat; }
 
