@@ -80,9 +80,17 @@
 
 .icon-path-40 { background-image: url('png/path-40.png'); background-repeat: no-repeat; }
 
+.icon-path-destination-24-primary { background-image: url('png/path-destination-24-primary.png'); background-repeat: no-repeat; }
+
+.icon-path-destination-24 { background-image: url('png/path-destination-24.png'); background-repeat: no-repeat; }
+
 .icon-path-destination-25 { background-image: url('png/path-destination-25.png'); background-repeat: no-repeat; }
 
+.icon-path-origin-24-primary { background-image: url('png/path-origin-24-primary.png'); background-repeat: no-repeat; }
+
 .icon-path-origin-24 { background-image: url('png/path-origin-24.png'); background-repeat: no-repeat; }
+
+.icon-path-passthrough-24-primary { background-image: url('png/path-passthrough-24-primary.png'); background-repeat: no-repeat; }
 
 .icon-path-passthrough-24 { background-image: url('png/path-passthrough-24.png'); background-repeat: no-repeat; }
 
