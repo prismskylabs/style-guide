@@ -80,6 +80,12 @@
 
 .icon-path-40 { background-image: url('png/path-40.png'); background-repeat: no-repeat; }
 
+.icon-path-destination-25 { background-image: url('png/path-destination-25.png'); background-repeat: no-repeat; }
+
+.icon-path-origin-24 { background-image: url('png/path-origin-24.png'); background-repeat: no-repeat; }
+
+.icon-path-passthrough-24 { background-image: url('png/path-passthrough-24.png'); background-repeat: no-repeat; }
+
 .icon-play-24 { background-image: url('png/play-24.png'); background-repeat: no-repeat; }
 
 .icon-play-alt-24 { background-image: url('png/play-alt-24.png'); background-repeat: no-repeat; }
