@@ -491,6 +491,6 @@ select:not([multiple]) {
 
     // Light theme for when placed on dark backgrounds
     &.light {
-        background-image: url('../assets/images/down_arrow_60_11x11.png');
+        @extend .icon-arrow-down-24-gray;
     }
 }
