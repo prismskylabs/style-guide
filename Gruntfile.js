@@ -71,7 +71,8 @@ module.exports = function( grunt ) {
                 primary: '#00c5e5',
                 success: '#56d980',
                 info: '#3eccc4',
-                danger: '#fc8b8b'
+                danger: '#fc8b8b',
+                white: '#fff'
               }
             }
         }
