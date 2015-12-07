@@ -110,6 +110,10 @@
 
 .icon-plus-24 { background-image: url('png/plus-24.png'); background-repeat: no-repeat; }
 
+.icon-plus-24-primary {background-image: url('png/plus-24-primary.png'); background-repeat: no-repeat; }
+
+.icon-plus-40-primary {background-image: url('png/plus-40-primary.png'); background-repeat: no-repeat; }
+
 .icon-plus-alt-24 { background-image: url('png/plus-alt-24.png'); background-repeat: no-repeat; }
 
 .icon-preferences-24-primary { background-image: url('png/preferences-24-primary.png'); background-repeat: no-repeat; }
